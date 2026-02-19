@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LESSGOOO AI — Plateforme IA pour Créateurs & Entrepreneurs</title>
+  <meta name="description"
+    content="LESSGOOO AI est votre plateforme IA tout-en-un. Générez des vidéos cinématiques avec l'IA ou maîtrisez les compétences IA avec notre Masterclass." />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="hm-navbar" id="hmNavbar">
+    <div class="hm-container">
+      <a href="index.html" class="hm-nav-logo"><img src="logo.png" alt="Lessgooo AI" class="hm-nav-logo-img"></a>
+      <ul class="hm-nav-links">
+        <li><a href="index.html" class="hm-nav-active" data-i18n="nav_home">Accueil</a></li>
+        <li><a href="ai-generator.html" data-i18n="nav_generator">Générateur IA</a></li>
+        <li><a href="masterclass.html" data-i18n="nav_masterclass">Masterclass</a></li>
+      </ul>
+      <div class="hm-nav-actions">
+        <button class="hm-lang-toggle" id="hmLangToggle" aria-label="Changer de langue">
+          <span class="hm-lang-flag" id="hmLangFlag">🇬🇧</span>
+          <span class="hm-lang-label" id="hmLangLabel">EN</span>
+        </button>
+        <a href="https://wa.me/237675627271?text=Bonjour%20%F0%9F%91%8B%0A%0AJe%20suis%20int%C3%A9ress%C3%A9%20par%20LESSGOO%20AI.%0A%0AVeuillez%20m%27envoyer%20plus%20de%20d%C3%A9tails.%0A%0AMerci."
+          target="_blank" rel="noopener noreferrer" class="hm-btn-primary hm-btn-nav" data-i18n-wa>
+          <span data-i18n="nav_contact">Contactez-nous</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hm-hero">
+    <canvas id="hmParticles"></canvas>
+    <div class="hm-hero-glow hm-hero-glow-1"></div>
+    <div class="hm-hero-glow hm-hero-glow-2"></div>
+    <div class="hm-hero-glow hm-hero-glow-3"></div>
+    <div class="hm-container">
+      <div class="hm-hero-content">
+        <div class="hm-hero-badge" data-i18n="hero_badge" data-i18n-html="true">
+          <span class="hm-badge-pulse"></span>
+          ⚡ Le Futur de l'IA Est Ici
+        </div>
+        <h1 class="hm-hero-title" data-i18n="hero_title" data-i18n-html="true">
+          Votre Plateforme <span class="hm-gradient-text">IA Tout-en-Un</span>
+        </h1>
+        <p class="hm-hero-subtitle" data-i18n="hero_subtitle">
+          Créez des vidéos IA cinématiques instantanément ou maîtrisez les compétences IA pour commencer à
+          gagner. LESSGOOO AI vous donne les outils et les connaissances.
+        </p>
+        <div class="hm-hero-actions">
+          <a href="ai-generator.html" class="hm-btn-primary hm-btn-lg">
+            <span data-i18n="hero_btn1">🎬 Générateur Vidéo IA</span>
+          </a>
+          <a href="masterclass.html" class="hm-btn-secondary hm-btn-lg">
+            <span data-i18n="hero_btn2">🧠 Masterclass IA</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PRODUCTS ====== -->
+  <section class="hm-products" id="products">
+    <div class="hm-container">
+      <span class="hm-section-label hm-reveal" data-i18n="prod_label">Nos Produits</span>
+      <h2 class="hm-section-title hm-reveal" data-i18n="prod_title">Deux Moyens Puissants de Progresser</h2>
+
+      <div class="hm-products-grid">
+        <!-- AI Generator Card -->
+        <div class="hm-product-card hm-reveal">
+          <div class="hm-product-icon">🎬</div>
+          <span class="hm-product-badge" data-i18n="prod1_badge">Outil</span>
+          <h3 class="hm-product-title" data-i18n="prod1_title">Générateur Vidéo IA</h3>
+          <p class="hm-product-desc" data-i18n="prod1_desc">Transformez de simples textes en superbes vidéos
+            cinématiques de 8 secondes grâce à l'IA avancée. Aucune compétence en montage requise.</p>
+          <ul class="hm-product-features">
+            <li data-i18n="prod1_f1">✦ Texte en vidéo en secondes</li>
+            <li data-i18n="prod1_f2">✦ Qualité cinématique</li>
+            <li data-i18n="prod1_f3">✦ Paiement unique, accès à vie</li>
+          </ul>
+          <div class="hm-product-price">
+            <span class="hm-product-amount">1 000 CFA</span>
+            <span class="hm-product-period" data-i18n="prod1_period">Paiement unique</span>
+          </div>
+          <a href="ai-generator.html" class="hm-btn-primary hm-btn-full" data-i18n="prod1_cta">Explorer le
+            Générateur IA →</a>
+        </div>
+
+        <!-- Masterclass Card -->
+        <div class="hm-product-card hm-product-featured hm-reveal">
+          <div class="hm-product-icon">🧠</div>
+          <span class="hm-product-badge hm-badge-hot" data-i18n="prod2_badge">🔥 Populaire</span>
+          <h3 class="hm-product-title" data-i18n="prod2_title">Masterclass IA</h3>
+          <p class="hm-product-desc" data-i18n="prod2_desc">Apprenez des compétences IA pratiques — de
+            l'automatisation à la création de contenu en passant par la construction d'une activité
+            secondaire rentable.</p>
+          <ul class="hm-product-features">
+            <li data-i18n="prod2_f1">✦ 6 modules complets</li>
+            <li data-i18n="prod2_f2">✦ Projets pratiques et démos</li>
+            <li data-i18n="prod2_f3">✦ Accès à vie + mises à jour incluses</li>
+          </ul>
+          <div class="hm-product-price">
+            <span class="hm-product-original">30 000 CFA</span>
+            <span class="hm-product-amount">5 000 CFA</span>
+            <span class="hm-product-period" data-i18n="prod2_period">83% de réduction</span>
+          </div>
+          <a href="masterclass.html" class="hm-btn-primary hm-btn-full" data-i18n="prod2_cta">Explorer la
+            Masterclass →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MARQUEE STRIP ====== -->
+  <section class="hm-marquee-section">
+    <div class="hm-marquee-track">
+      <span class="hm-marquee-item">AI VIDEO GENERATION</span>
+      <span class="hm-marquee-sep">✦</span>
+      <span class="hm-marquee-item">MASTERCLASS IA</span>
+      <span class="hm-marquee-sep">✦</span>
+      <span class="hm-marquee-item">AUTOMATISATION</span>
+      <span class="hm-marquee-sep">✦</span>
+      <span class="hm-marquee-item">CRÉATEURS</span>
+      <span class="hm-marquee-sep">✦</span>
+      <span class="hm-marquee-item">ENTREPRENEURS</span>
+      <span class="hm-marquee-sep">✦</span>
+      <span class="hm-marquee-item">LESSGOOO AI</span>
+      <span class="hm-marquee-sep">✦</span>
+      <span class="hm-marquee-item">AI VIDEO GENERATION</span>
+      <span class="hm-marquee-sep">✦</span>
+      <span class="hm-marquee-item">MASTERCLASS IA</span>
+      <span class="hm-marquee-sep">✦</span>
+      <span class="hm-marquee-item">AUTOMATISATION</span>
+      <span class="hm-marquee-sep">✦</span>
+      <span class="hm-marquee-item">CRÉATEURS</span>
+      <span class="hm-marquee-sep">✦</span>
+      <span class="hm-marquee-item">ENTREPRENEURS</span>
+      <span class="hm-marquee-sep">✦</span>
+      <span class="hm-marquee-item">LESSGOOO AI</span>
+      <span class="hm-marquee-sep">✦</span>
+    </div>
+  </section>
+
+  <!-- ====== WHY LESSGOO ====== -->
+  <section class="hm-why">
+    <div class="hm-container">
+      <span class="hm-section-label hm-reveal" data-i18n="why_label">Pourquoi LESSGOOO AI</span>
+      <h2 class="hm-section-title hm-reveal" data-i18n="why_title">Conçu pour la Génération IA</h2>
+      <div class="hm-why-grid">
+        <div class="hm-why-card hm-reveal">
+          <div class="hm-why-icon">🚀</div>
+          <h3 data-i18n="why1_title">Résultats Instantanés</h3>
+          <p data-i18n="why1_desc">Générez des vidéos IA en secondes. Pas d'attente, pas de complexité.
+            Décrivez et créez.</p>
+        </div>
+        <div class="hm-why-card hm-reveal">
+          <div class="hm-why-icon">💡</div>
+          <h3 data-i18n="why2_title">Apprenez & Gagnez</h3>
+          <p data-i18n="why2_desc">Notre Masterclass vous apprend à transformer vos compétences IA en
+            véritables opportunités de revenus.</p>
+        </div>
+        <div class="hm-why-card hm-reveal">
+          <div class="hm-why-icon">💰</div>
+          <h3 data-i18n="why3_title">Accès Abordable</h3>
+          <p data-i18n="why3_desc">Pas d'abonnements. Des paiements uniques pour un accès à vie à tous les
+            outils et contenus.</p>
+        </div>
+        <div class="hm-why-card hm-reveal">
+          <div class="hm-why-icon">🌍</div>
+          <h3 data-i18n="why4_title">Fait pour l'Afrique</h3>
+          <p data-i18n="why4_desc">Conçu et tarifé pour les créateurs, entrepreneurs et étudiants africains.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA ====== -->
+  <section class="hm-cta">
+    <div class="hm-container">
+      <div class="hm-cta-glow"></div>
+      <h2 class="hm-cta-title hm-reveal" data-i18n="cta_title" data-i18n-html="true">Prêt à Commencer Votre
+        <span class="hm-gradient-text">Aventure IA</span> ?
+      </h2>
+      <p class="hm-cta-subtitle hm-reveal" data-i18n="cta_subtitle">Choisissez votre chemin et faites le premier
+        pas aujourd'hui.</p>
+      <div class="hm-cta-actions hm-reveal">
+        <a href="ai-generator.html" class="hm-btn-primary hm-btn-xl" data-i18n="cta_btn1">🎬 Essayer le
+          Générateur IA</a>
+        <a href="masterclass.html" class="hm-btn-secondary hm-btn-xl" data-i18n="cta_btn2">🧠 Rejoindre la
+          Masterclass</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="hm-footer">
+    <div class="hm-container">
+      <a href="index.html" class="hm-footer-logo"><img src="logo.png" alt="Lessgooo AI" class="hm-footer-logo-img"></a>
+      <div class="hm-footer-links">
+        <a href="index.html" data-i18n="foot_home">Accueil</a>
+        <a href="ai-generator.html" data-i18n="foot_gen">Générateur IA</a>
+        <a href="masterclass.html" data-i18n="foot_mc">Masterclass</a>
+      </div>
+      <p class="hm-footer-copy" data-i18n="foot_copy" data-i18n-html="true">&copy; 2026 Lessgooo AI. Tous droits
+        réservés.</p>
+    </div>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+
+</html>

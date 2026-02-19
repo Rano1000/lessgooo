@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LESSGOOO AI Masterclass — Maîtrisez l'IA & Commencez à Gagner</title>
+    <meta name="description"
+        content="Apprenez des compétences IA pratiques pour automatiser votre travail, créer des produits numériques et développer de nouvelles sources de revenus. Inscrivez-vous maintenant à prix réduit." />
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="masterclass.css" />
+</head>
+
+<body>
+
+    <!-- ====== TOP HOME BAR ====== -->
+    <div class="mc-top-home-bar">
+        <div class="mc-container">
+            <a href="index.html" class="mc-top-home-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                <span data-i18n="topbar_home">Accueil</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav class="mc-navbar" id="mcNavbar">
+        <div class="mc-container">
+            <a href="index.html" class="mc-nav-logo"><img src="logo.png" alt="Lessgooo AI" class="mc-nav-logo-img"></a>
+            <ul class="mc-nav-links" id="mcNavLinks">
+                <li><a href="index.html" data-i18n="nav_home_link">Accueil</a></li>
+                <li><a href="ai-generator.html" data-i18n="nav_gen_link">Générateur IA</a></li>
+                <li><a href="masterclass.html" class="mc-nav-active" data-i18n="nav_mc_link">Masterclass</a></li>
+            </ul>
+            <div class="mc-nav-actions">
+                <button class="mc-lang-toggle" id="mcLangToggle" aria-label="Changer de langue">
+                    <span class="mc-lang-flag" id="mcLangFlag">🇬🇧</span>
+                    <span class="mc-lang-label" id="mcLangLabel">EN</span>
+                </button>
+                <a href="https://wa.me/237675627271?text=Bonjour%20%F0%9F%91%8B%0A%0AJe%20souhaite%20m%27inscrire%20%C3%A0%20la%20Masterclass%20LESSGOO%20AI.%0A%0AVeuillez%20m%27envoyer%20les%20d%C3%A9tails%20de%20paiement.%0A%0AMerci."
+                    target="_blank" rel="noopener noreferrer" class="mc-btn-primary mc-btn-nav" data-i18n-wa>
+                    <span data-i18n="nav_cta">S'inscrire</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ====== HERO ====== -->
+    <section class="mc-hero" id="hero">
+        <div class="mc-hero-glow mc-hero-glow-1"></div>
+        <div class="mc-hero-glow mc-hero-glow-2"></div>
+        <div class="mc-container">
+            <div class="mc-hero-content">
+                <div class="mc-hero-badge" data-i18n="hero_badge" data-i18n-html="true">
+                    <span class="mc-badge-pulse"></span>
+                    🧠 Masterclass IA 2026
+                </div>
+                <h1 class="mc-hero-title" data-i18n="hero_title" data-i18n-html="true">
+                    Maîtrisez l'<span class="mc-gradient-text">Intelligence Artificielle</span> et Commencez à En Gagner
+                </h1>
+                <p class="mc-hero-subtitle" data-i18n="hero_subtitle">
+                    Apprenez des compétences IA pratiques pour automatiser votre travail, créer des produits numériques,
+                    générer du contenu et développer de nouvelles sources de revenus.
+                </p>
+                <div class="mc-hero-actions">
+                    <a href="https://wa.me/237675627271?text=Bonjour%20%F0%9F%91%8B%0A%0AJe%20souhaite%20m%27inscrire%20%C3%A0%20la%20Masterclass%20LESSGOO%20AI.%0A%0AVeuillez%20m%27envoyer%20les%20d%C3%A9tails%20de%20paiement.%0A%0AMerci."
+                        target="_blank" rel="noopener noreferrer" class="mc-btn-primary mc-btn-lg" data-i18n-wa>
+                        <span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                                style="display:inline;vertical-align:middle;margin-right:8px;">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 0 0 .611.611l4.458-1.495A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.319 0-4.476-.673-6.303-1.834l-.44-.276-3.124 1.048 1.048-3.124-.276-.44A9.955 9.955 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+                            </svg>
+                            <span data-i18n="hero_cta">S'inscrire Maintenant</span>
+                        </span>
+                    </a>
+                </div>
+                <p class="mc-hero-subtext" data-i18n="hero_subtext">⚡ Réduction limitée disponible</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== COUNTDOWN TIMER ====== -->
+    <section class="mc-countdown-section" id="countdown">
+        <div class="mc-container">
+            <div class="mc-countdown-card">
+                <p class="mc-countdown-label" data-i18n="cd_label">🔥 L'OFFRE SE TERMINE DANS :</p>
+                <div class="mc-countdown-timer" id="countdownTimer">
+                    <div class="mc-countdown-unit">
+                        <span class="mc-countdown-value" id="cdDays">30</span>
+                        <span class="mc-countdown-name" data-i18n="cd_days">Jours</span>
+                    </div>
+                    <span class="mc-countdown-sep">:</span>
+                    <div class="mc-countdown-unit">
+                        <span class="mc-countdown-value" id="cdHours">00</span>
+                        <span class="mc-countdown-name" data-i18n="cd_hours">Heures</span>
+                    </div>
+                    <span class="mc-countdown-sep">:</span>
+                    <div class="mc-countdown-unit">
+                        <span class="mc-countdown-value" id="cdMinutes">00</span>
+                        <span class="mc-countdown-name" data-i18n="cd_minutes">Minutes</span>
+                    </div>
+                    <span class="mc-countdown-sep">:</span>
+                    <div class="mc-countdown-unit">
+                        <span class="mc-countdown-value" id="cdSeconds">00</span>
+                        <span class="mc-countdown-name" data-i18n="cd_seconds">Secondes</span>
+                    </div>
+                </div>
+                <p class="mc-countdown-warning" data-i18n="cd_warning" data-i18n-html="true">Quand le compteur atteint
+                    zéro, le prix revient à <strong>30 000 CFA</strong>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== WHY THIS MASTERCLASS ====== -->
+    <section class="mc-why-section" id="why">
+        <div class="mc-container">
+            <span class="mc-section-label mc-reveal" data-i18n="why_label">Pourquoi Cette Masterclass</span>
+            <h2 class="mc-section-title mc-reveal" data-i18n="why_title">Pourquoi Apprendre l'IA Maintenant ?</h2>
+            <div class="mc-why-grid">
+                <div class="mc-why-card mc-reveal">
+                    <div class="mc-why-icon">🚀</div>
+                    <h3 data-i18n="why1_title">Compétences Les Plus Demandées</h3>
+                    <p data-i18n="why1_desc">Les compétences IA sont les plus demandées en 2026. Les entreprises
+                        recherchent partout des talents prêts pour l'IA.</p>
+                </div>
+                <div class="mc-why-card mc-reveal">
+                    <div class="mc-why-icon">💰</div>
+                    <h3 data-i18n="why2_title">Les Entreprises Paient pour l'IA</h3>
+                    <p data-i18n="why2_desc">Les entreprises paient cher pour des services IA. Positionnez-vous pour
+                        capter cette demande croissante.</p>
+                </div>
+                <div class="mc-why-card mc-reveal">
+                    <div class="mc-why-icon">⚡</div>
+                    <h3 data-i18n="why3_title">Automatisez des Heures de Travail</h3>
+                    <p data-i18n="why3_desc">L'IA peut automatiser des heures de travail répétitif chaque jour, vous
+                        libérant pour ce qui compte vraiment.</p>
+                </div>
+                <div class="mc-why-card mc-reveal">
+                    <div class="mc-why-icon">💼</div>
+                    <h3 data-i18n="why4_title">Lancez une Activité Secondaire</h3>
+                    <p data-i18n="why4_desc">Vous pouvez lancer une activité IA rapidement avec un investissement
+                        minimal et commencer à gagner tout de suite.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CURRICULUM ====== -->
+    <section class="mc-curriculum-section" id="curriculum">
+        <div class="mc-container">
+            <span class="mc-section-label mc-reveal" data-i18n="cur_label">Programme Complet</span>
+            <h2 class="mc-section-title mc-reveal" data-i18n="cur_title">Ce Que Vous Allez Apprendre</h2>
+            <p class="mc-section-desc mc-reveal" data-i18n="cur_desc">6 modules complets conçus pour vous faire passer
+                de débutant IA à praticien confiant.</p>
+
+            <div class="mc-modules-grid">
+                <!-- Module 1 -->
+                <div class="mc-module-card mc-reveal">
+                    <div class="mc-module-number">01</div>
+                    <h3 class="mc-module-title" data-i18n="m1_title">Fondamentaux de l'IA</h3>
+                    <ul class="mc-module-list">
+                        <li data-i18n="m1_l1">Qu'est-ce que l'IA et comment ça fonctionne (explication simple)</li>
+                        <li data-i18n="m1_l2">Vue d'ensemble des outils IA puissants</li>
+                        <li data-i18n="m1_l3">Comprendre les opportunités de l'IA</li>
+                    </ul>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="mc-module-card mc-reveal">
+                    <div class="mc-module-number">02</div>
+                    <h3 class="mc-module-title" data-i18n="m2_title">IA pour la Productivité</h3>
+                    <ul class="mc-module-list">
+                        <li data-i18n="m2_l1">Rédiger des emails, CV et propositions avec l'IA</li>
+                        <li data-i18n="m2_l2">Automatiser les tâches répétitives quotidiennes</li>
+                        <li data-i18n="m2_l3">Outils IA pour étudiants et professionnels</li>
+                    </ul>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="mc-module-card mc-reveal">
+                    <div class="mc-module-number">03</div>
+                    <h3 class="mc-module-title" data-i18n="m3_title">Création de Contenu IA</h3>
+                    <ul class="mc-module-list">
+                        <li data-i18n="m3_l1">Créer des vidéos IA étape par étape</li>
+                        <li data-i18n="m3_l2">Outils de génération d'images IA</li>
+                        <li data-i18n="m3_l3">Écriture de scripts et de contenu avec l'IA</li>
+                        <li data-i18n="m3_l4">Automatisation du contenu pour les réseaux sociaux</li>
+                    </ul>
+                </div>
+
+                <!-- Module 4 -->
+                <div class="mc-module-card mc-reveal">
+                    <div class="mc-module-number">04</div>
+                    <h3 class="mc-module-title" data-i18n="m4_title">IA pour Business & Activités Secondaires</h3>
+                    <ul class="mc-module-list">
+                        <li data-i18n="m4_l1">Lancer une activité secondaire avec l'IA</li>
+                        <li data-i18n="m4_l2">Vendre des services IA à des clients</li>
+                        <li data-i18n="m4_l3">Stratégies marketing IA</li>
+                        <li data-i18n="m4_l4">Créer des produits numériques avec l'IA</li>
+                    </ul>
+                </div>
+
+                <!-- Module 5 -->
+                <div class="mc-module-card mc-reveal">
+                    <div class="mc-module-number">05</div>
+                    <h3 class="mc-module-title" data-i18n="m5_title">Automatisation IA</h3>
+                    <ul class="mc-module-list">
+                        <li data-i18n="m5_l1">Connecter les outils IA entre eux</li>
+                        <li data-i18n="m5_l2">Créer des workflows simples</li>
+                        <li data-i18n="m5_l3">Économiser plus de 10 heures par semaine grâce à l'IA</li>
+                    </ul>
+                </div>
+
+                <!-- Module 6 -->
+                <div class="mc-module-card mc-reveal">
+                    <div class="mc-module-number">06</div>
+                    <h3 class="mc-module-title" data-i18n="m6_title">Projets Pratiques</h3>
+                    <ul class="mc-module-list">
+                        <li data-i18n="m6_l1">Créez votre première vidéo IA</li>
+                        <li data-i18n="m6_l2">Lancez votre première offre basée sur l'IA</li>
+                        <li data-i18n="m6_l3">Démonstrations réelles étape par étape</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== WHO THIS IS FOR ====== -->
+    <section class="mc-audience-section" id="audience">
+        <div class="mc-container">
+            <span class="mc-section-label mc-reveal" data-i18n="aud_label">Pour Qui</span>
+            <h2 class="mc-section-title mc-reveal" data-i18n="aud_title">Cette Masterclass Est Faite Pour</h2>
+            <div class="mc-audience-grid">
+                <div class="mc-audience-card mc-reveal">
+                    <div class="mc-audience-emoji">🎓</div>
+                    <h3 data-i18n="aud1_title">Étudiants</h3>
+                    <p data-i18n="aud1_desc">Prenez de l'avance et préparez votre carrière avec des compétences IA
+                        avant même d'être diplômé.</p>
+                </div>
+                <div class="mc-audience-card mc-reveal">
+                    <div class="mc-audience-emoji">🏢</div>
+                    <h3 data-i18n="aud2_title">Entrepreneurs</h3>
+                    <p data-i18n="aud2_desc">Utilisez l'IA pour développer votre entreprise, réduire les coûts et créer
+                        de nouvelles sources de revenus sans effort.</p>
+                </div>
+                <div class="mc-audience-card mc-reveal">
+                    <div class="mc-audience-emoji">💻</div>
+                    <h3 data-i18n="aud3_title">Freelancers</h3>
+                    <p data-i18n="aud3_desc">Offrez des services IA de grande valeur à vos clients et facturez des
+                        tarifs premium pour un travail très demandé.</p>
+                </div>
+                <div class="mc-audience-card mc-reveal">
+                    <div class="mc-audience-emoji">🌟</div>
+                    <h3 data-i18n="aud4_title">Esprits Curieux</h3>
+                    <p data-i18n="aud4_desc">Aucune formation technique requise. Si l'IA vous intéresse, cette
+                        masterclass est votre point de départ idéal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PRICING ====== -->
+    <section class="mc-pricing-section" id="pricing">
+        <div class="mc-container">
+            <span class="mc-section-label mc-reveal" data-i18n="price_label">Tarifs</span>
+            <h2 class="mc-section-title mc-reveal" data-i18n="price_title">Investissez Dans Votre Avenir</h2>
+
+            <div class="mc-pricing-card mc-reveal">
+                <span class="mc-pricing-badge" data-i18n="price_badge">🔥 OFFRE LIMITÉE</span>
+                <h3 class="mc-pricing-plan">LESSGOOO AI MASTERCLASS</h3>
+                <p class="mc-pricing-desc" data-i18n="price_desc">Formation IA complète — des bases à l'apprentissage
+                    de la monétisation avec l'IA.</p>
+                <div class="mc-pricing-prices">
+                    <span class="mc-pricing-original">30,000 CFA</span>
+                    <div class="mc-pricing-current">
+                        <span class="mc-pricing-amount">5,000</span>
+                        <span class="mc-pricing-currency">CFA</span>
+                    </div>
+                </div>
+                <p class="mc-pricing-save" data-i18n="price_save">Vous économisez 25 000 CFA (83% de réduction)</p>
+                <p class="mc-pricing-note" data-i18n="price_note">Paiement unique. Accès à vie à la masterclass.</p>
+
+                <ul class="mc-pricing-includes">
+                    <li data-i18n="pi1">✦ 6 modules complets</li>
+                    <li data-i18n="pi2">✦ Projets pratiques et démos</li>
+                    <li data-i18n="pi3">✦ Accès à vie</li>
+                    <li data-i18n="pi4">✦ Mises à jour futures incluses</li>
+                </ul>
+
+                <a href="https://wa.me/237675627271?text=Bonjour%20%F0%9F%91%8B%0A%0AJe%20souhaite%20m%27inscrire%20%C3%A0%20la%20Masterclass%20LESSGOO%20AI.%0A%0AVeuillez%20m%27envoyer%20les%20d%C3%A9tails%20de%20paiement.%0A%0AMerci."
+                    target="_blank" rel="noopener noreferrer" class="mc-btn-primary mc-btn-lg mc-btn-full" data-i18n-wa>
+                    <span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                            style="display:inline;vertical-align:middle;margin-right:8px;">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 0 0 .611.611l4.458-1.495A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.319 0-4.476-.673-6.303-1.834l-.44-.276-3.124 1.048 1.048-3.124-.276-.44A9.955 9.955 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+                        </svg>
+                        <span data-i18n="price_cta">S'inscrire via WhatsApp</span>
+                    </span>
+                </a>
+                <p class="mc-pricing-footnote" data-i18n="price_footnote">Accès instantané après confirmation du
+                    paiement</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FINAL CTA ====== -->
+    <section class="mc-final-cta" id="final-cta">
+        <div class="mc-container">
+            <div class="mc-final-glow"></div>
+            <h2 class="mc-final-title mc-reveal" data-i18n="final_title" data-i18n-html="true">Ne Manquez Pas Cette
+                Opportunité d'Apprendre l'IA à un <span class="mc-gradient-text">Prix Réduit</span></h2>
+            <p class="mc-final-subtitle mc-reveal" data-i18n="final_subtitle">Réservez votre place avant la fin du
+                compte à rebours.</p>
+            <a href="https://wa.me/237675627271?text=Bonjour%20%F0%9F%91%8B%0A%0AJe%20souhaite%20m%27inscrire%20%C3%A0%20la%20Masterclass%20LESSGOO%20AI.%0A%0AVeuillez%20m%27envoyer%20les%20d%C3%A9tails%20de%20paiement.%0A%0AMerci."
+                target="_blank" rel="noopener noreferrer" class="mc-btn-primary mc-btn-xl mc-reveal" data-i18n-wa>
+                <span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                        style="display:inline;vertical-align:middle;margin-right:8px;">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 0 0 .611.611l4.458-1.495A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.319 0-4.476-.673-6.303-1.834l-.44-.276-3.124 1.048 1.048-3.124-.276-.44A9.955 9.955 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+                    </svg>
+                    <span data-i18n="final_cta">Réserver Ma Place Maintenant</span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="mc-footer">
+        <div class="mc-container">
+            <a href="index.html" class="mc-footer-logo"><img src="logo.png" alt="Lessgooo AI"
+                    class="mc-footer-logo-img"></a>
+            <p class="mc-footer-disclaimer" data-i18n="footer_disc">L'accès est accordé après confirmation du paiement.
+                Réduction valable uniquement pendant la période du compte à rebours.</p>
+            <p class="mc-footer-copy" data-i18n="footer_copy" data-i18n-html="true">&copy; 2026 Lessgooo AI. Tous
+                droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="masterclass.js"></script>
+</body>
+
+</html>
