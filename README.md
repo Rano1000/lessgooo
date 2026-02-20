@@ -1,6 +1,10 @@
-# LESSGOO AI 🚀
+<p align="center">
+  <img src="logo.png" alt="LESSGOO AI Logo" width="400"/>
+</p>
 
-LESSGOO AI is a modern AI-powered web platform that allows users to:
+<h1 align="center">LESSGOOO AI 🚀</h1>
+
+LESSGOOO AI is a modern AI-powered web platform that allows users to:
 - Generate AI videos
 - Enroll in AI Masterclass training
 - Learn how to use Artificial Intelligence for productivity and income
@@ -58,12 +62,23 @@ WhatsApp auto-message dynamically updates based on selected language.
 
 ## 🏗 Project Structure
 
-/index.html
-/ai-generator.html
-/masterclass.html
-/assets/
-/styles.css
-/script.js
+lessgooo/
+│
+├── README.md
+├── index.html
+├── ai-generator.html
+├── masterclass.html
+│
+├── logo.png
+├── video.mp4
+│
+├── index.css
+├── home.css
+├── masterclass.css
+│
+├── script.js
+├── home.js
+├── masterclass.js
 
 ---
 
