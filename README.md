@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="logo.png" alt="LESSGOO AI Logo" width="400"/>
+  <img src="readme-logo.png" alt="LESSGOOO AI" width="100%"/>
 </p>
-
-<h1 align="center">LESSGOOO AI 🚀</h1>
 
 LESSGOOO AI is a modern AI-powered web platform that allows users to:
 - Generate AI videos
