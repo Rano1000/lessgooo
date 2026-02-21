@@ -54,7 +54,6 @@ WhatsApp auto-message dynamically updates based on selected language.
 - JavaScript
 - GitHub Pages (Hosting)
 - WhatsApp API (Redirect System)
-- Google Opal (AI Engine)
 
 ---
 
