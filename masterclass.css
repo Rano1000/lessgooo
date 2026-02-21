@@ -293,6 +293,19 @@ body::before {
     position: relative;
     overflow: hidden;
     white-space: nowrap;
+    animation: mc-btn-glow 3s ease-in-out infinite;
+}
+
+@keyframes mc-btn-glow {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 20px rgba(79, 143, 255, 0.25);
+    }
+
+    50% {
+        box-shadow: 0 4px 30px rgba(79, 143, 255, 0.45), 0 0 50px rgba(155, 92, 255, 0.12);
+    }
 }
 
 .mc-btn-primary::before {
@@ -307,7 +320,27 @@ body::before {
 
 .mc-btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 35px rgba(79, 143, 255, 0.45);
+    box-shadow: 0 8px 35px rgba(79, 143, 255, 0.45), 0 0 60px rgba(79, 143, 255, 0.15);
+    animation: none;
+}
+
+/* Shimmer sweep */
+.mc-btn-primary::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 50%;
+    height: 200%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(-20deg);
+    transition: left 0.6s ease;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.mc-btn-primary:hover::after {
+    left: 120%;
 }
 
 .mc-btn-primary:hover::before {
@@ -388,6 +421,32 @@ body::before {
     font-weight: 600;
     color: var(--text-secondary);
     margin-bottom: 32px;
+    animation: mc-badge-float 4s ease-in-out infinite, mc-fade-up 0.8s 0.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+    backdrop-filter: blur(10px);
+}
+
+@keyframes mc-badge-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes mc-fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .mc-badge-pulse {
@@ -419,6 +478,15 @@ body::before {
     line-height: 1.1;
     margin-bottom: 24px;
     letter-spacing: -1px;
+    animation: mc-fade-up 0.8s 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.mc-gradient-text {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 20px rgba(79, 143, 255, 0.3)) drop-shadow(0 0 40px rgba(155, 92, 255, 0.15));
 }
 
 .mc-hero-subtitle {
@@ -504,6 +572,20 @@ body::before {
     background-clip: text;
     min-width: 90px;
     text-align: center;
+    filter: drop-shadow(0 0 12px rgba(79, 143, 255, 0.4));
+    animation: mc-countdown-glow 2s ease-in-out infinite;
+}
+
+@keyframes mc-countdown-glow {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 12px rgba(79, 143, 255, 0.4));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 20px rgba(79, 143, 255, 0.6)) drop-shadow(0 0 40px rgba(155, 92, 255, 0.2));
+    }
 }
 
 .mc-countdown-name {
@@ -549,17 +631,19 @@ body::before {
 
 .mc-why-card {
     padding: 36px 28px;
-    background: var(--bg-card);
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
     text-align: center;
-    transition: all 0.4s ease;
+    transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 .mc-why-card:hover {
     border-color: var(--border-glow);
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px rgba(79, 143, 255, 0.08);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.25), 0 0 40px rgba(79, 143, 255, 0.08);
 }
 
 .mc-why-icon {
@@ -601,7 +685,7 @@ body::before {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
-    transition: all 0.4s ease;
+    transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
     overflow: hidden;
 }
@@ -620,7 +704,8 @@ body::before {
 
 .mc-module-card:hover {
     border-color: var(--border-glow);
-    transform: translateY(-4px);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.2), 0 0 30px rgba(79, 143, 255, 0.06);
 }
 
 .mc-module-card:hover::before {
@@ -690,17 +775,43 @@ body::before {
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
     text-align: center;
-    transition: all 0.4s ease;
+    transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .mc-audience-card:hover {
     border-color: var(--border-glow);
-    transform: translateY(-4px);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 50px rgba(0, 0, 0, 0.2), 0 0 30px rgba(79, 143, 255, 0.06);
 }
 
 .mc-audience-emoji {
     font-size: 48px;
     margin-bottom: 20px;
+    display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mc-audience-card:hover .mc-audience-emoji {
+    transform: scale(1.25) translateY(-4px);
+    animation: mc-emoji-bounce 0.5s ease;
+}
+
+@keyframes mc-emoji-bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.35) translateY(-8px);
+    }
+
+    60% {
+        transform: scale(1.15) translateY(-2px);
+    }
+
+    100% {
+        transform: scale(1.25) translateY(-4px);
+    }
 }
 
 .mc-audience-card h3 {
@@ -734,6 +845,13 @@ body::before {
     text-align: center;
     position: relative;
     overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mc-pricing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 60px rgba(79, 143, 255, 0.1);
+    border-color: rgba(79, 143, 255, 0.35);
 }
 
 .mc-pricing-card::before {
@@ -858,8 +976,23 @@ body::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: radial-gradient(ellipse, rgba(79, 143, 255, 0.08) 0%, transparent 70%);
+    background: radial-gradient(ellipse, rgba(79, 143, 255, 0.1) 0%, transparent 70%);
     pointer-events: none;
+    animation: mc-cta-breathe 5s ease-in-out infinite;
+}
+
+@keyframes mc-cta-breathe {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+    }
 }
 
 .mc-final-title {
@@ -880,9 +1013,21 @@ body::before {
 /* ===== Footer ===== */
 .mc-footer {
     padding: 48px 0 32px;
-    border-top: 1px solid var(--border-color);
+    border-top: none;
     position: relative;
     z-index: 1;
+}
+
+.mc-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(79, 143, 255, 0.4), rgba(155, 92, 255, 0.4), transparent);
 }
 
 .mc-footer .mc-container {
